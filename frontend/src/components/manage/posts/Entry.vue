@@ -4,7 +4,7 @@
         <p class="medium-3">{{headline}}</p>
         <p class="medium-3">Author_id # {{author_id}}</p>
         <delete-button entity="post" :id="id" class="medium-2"/>
-        <edit-button class="medium-2" />
+        <edit-button class="medium-2" :id="id" />
     </li>
 </template>
 
@@ -17,7 +17,7 @@
         methods: {
 
         },
-        name: "ManagePostEntry",
+        name: "Entry.vue",
         props: {
             author_id: {
                 required: true,

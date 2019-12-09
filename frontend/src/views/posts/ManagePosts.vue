@@ -1,15 +1,15 @@
 <template>
     <div>
         {{$store.state.test}}
-        <manage-post-list />
+        <post-list />
     </div>
 </template>
 
 <script>
-    import ManagePostList from "../components/manage/posts/ManagePostList";
+    import PostList from "../../components/manage/posts/PostList";
     export default {
         name: "ManagePosts.vue",
-        components: {ManagePostList}
+        components: {PostList}
     }
 </script>
 

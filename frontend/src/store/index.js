@@ -12,7 +12,6 @@ export default new Vuex.Store({
   actions: {
     fetchPosts() {
       axios.get('/posts').then(posts => {
-        console.log('test');
         this.state.posts = posts.data;
       })
     },

@@ -1,10 +1,17 @@
 <template>
-    <button type="button" class="warning button">Edit</button>
+    <router-link class="warning button" :to="{name: 'edit-post', params: {id: id}}">Edit</router-link>
 </template>
 
 <script>
     export default {
-        name: "EditButton.vue"
+        name: "EditButton.vue",
+        props: {
+            /** id of entity to be edited */
+            id: {
+                required: true,
+                type: Number
+            }
+        }
     }
 </script>
 
